@@ -5,11 +5,7 @@ struct Language: CustomStringConvertible {
 }
 
 class Programmer: CustomStringConvertible {
-    // ...
-
-    // You *do not* need to implement `var description: String`
-    // by importing `DefaultStringConvertible`, you get a default `description` for free
-
+  // Copied and modified https://github.com/jessesquires/DefaultStringConvertible
   var name: String
   var age: Int
   var languages: [Language]
